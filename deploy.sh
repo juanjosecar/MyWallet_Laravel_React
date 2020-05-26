@@ -1,9 +1,9 @@
 #Run Database Migrations
 
-php artisan migrate:fresh
 # php artisan config:cache
-# php artisan migrate --force
+#  php artisan migrate --force
+php artisan migrate:refresh --seed --force
 
 #Run Seeds
 
-php artisan db:seed 
+# php artisan db:seed 
