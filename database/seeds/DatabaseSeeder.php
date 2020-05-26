@@ -11,6 +11,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UserSeeder::class);
+        //Aqui se define el orden de ejecucion de los seeders
+         $this->call(WalletTableSeeder::class);
+         $this->call(TransferTableSeeder::class);
     }
 }
